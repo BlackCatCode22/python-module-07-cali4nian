@@ -1,0 +1,30 @@
+******* Zoo Population and Habitat Assignment Report *******
+
+Hyena Habitat:
+
+Hy00;Madoa; birthdate: 2021-01-24;tan color;female;70 pounds;from Friguia Park, Tunisia; arrived 2025-08-25
+Hy01;Ed; birthdate: 2013-12-16;brown color;male;150 pounds;from Friguia Park, Tunisia; arrived 2025-08-25
+Hy02;Ed; birthdate: 2021-12-09;black color;male;120 pounds;from Friguia Park, Tunisia; arrived 2025-08-25
+Hy03;Shenzi; birthdate: None;black and tan striped color;female;105 pounds;from Friguia Park, Tunisia; arrived 2025-08-25
+
+Lion Habitat:
+
+Li04;Kimba; birthdate: 2019-01-14;tan color;female;300 pounds;from Zanzibar, Tanzania; arrived 2025-08-25
+Li05;Mufasa; birthdate: 2013-02-21;dark tan color;female;375 pounds;from KopeLion, Tanzania; arrived 2025-08-25
+Li06;Kimba; birthdate: 2003-02-02;golden color;male;450 pounds;from Zanzibar, Tanzania; arrived 2025-08-25
+Li07;Scar; birthdate: 2021-01-12;tan and brown color;female;275 pounds;from KopeLion, Tanzania; arrived 2025-08-25
+
+Tiger Habitat:
+
+Ti08;Cuddles; birthdate: 2023-02-05;gold and tan stripes color;male;270 pounds;from Dhaka, Bangladesh; arrived 2025-08-25
+Ti10;Jiba; birthdate: 2021-01-24;black stripes color;female;400 pounds;from Dhaka, Bangladesh; arrived 2025-08-25
+Ti11;Jiba; birthdate: 2007-01-12;gold and tan color;male;300 pounds;from Bardia, Nepal; arrived 2025-08-25
+Ti12;Dave; birthdate: 2022-12-24;black stripes color;female;285 pounds;from Bardia, Nepal; arrived 2025-08-25
+
+Bear Habitat:
+
+Be13;Bert; birthdate: 2018-01-31;brown color;male;320 pounds;from Alaska Zoo, Alaska; arrived 2025-08-25
+Be14;Winnie the Pooh; birthdate: 2000-12-31;black color;female;425 pounds;from Woodland park Zoo, Washington; arrived 2025-08-25
+Be15;Snuggles; birthdate: 2021-12-22;black color;female;355 pounds;from Woodland park Zoo, Washington; arrived 2025-08-25
+Be16;Paddington; birthdate: 2021-12-04;brown color;male;405 pounds;from Alaska Zoo, Alaska; arrived 2025-08-25
+
