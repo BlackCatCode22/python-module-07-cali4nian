@@ -1,6 +1,5 @@
 # imports
 import datetime
-
 from Animal import Animal
 from Lion import Lion
 from Tiger import Tiger
@@ -12,18 +11,19 @@ animal_names= open('animalNames.txt')
 # instances
 animal = Animal()
 # logic
-lines = arriving_animals.readlines()
+# lists to separate animals by species
 lion_list = []
 tiger_list = []
 bear_list = []
 hyena_list = []
+# for loop to loop through lines of text in arrivingAnimals.txt
+lines = arriving_animals.readlines()
 for line in lines:
     # split line by , into array
     line_array = line.split(',')
     # call clean_data to clean data
     clean_array = animal.clean_data(line_array)
-    # create object based on if word is in first item in clean array
-    # species, name, animal_id, birthdate, color, sex, weight, originating_zoo, date_arrival
+    # create object based on if word is in first item in clean array, needs refactor for repetitive code but works
     sex = None
     if 'lion' in clean_array[0]:
         id_number = animal.get_num()
@@ -32,10 +32,7 @@ for line in lines:
         animal_id = animal.gen_unique_id(species, str(id_number))
         birthdate = animal.gen_birth_date(clean_array[0], clean_array[1])
         color = clean_array[2]
-        if "female" in clean_array[0]:
-            sex = "female"
-        else:
-            sex = "male"
+        sex = "female" if "female" in clean_array[0] else "male"
         weight = clean_array[3]
         originating_zoo = clean_array[4]+', '+clean_array[5]
         date_arrival = datetime.date.today()
@@ -48,10 +45,7 @@ for line in lines:
         animal_id = animal.gen_unique_id(species, str(id_number))
         birthdate = animal.gen_birth_date(clean_array[0], clean_array[1])
         color = clean_array[2]
-        if "female" in clean_array[0]:
-            sex = "female"
-        else:
-            sex = "male"
+        sex = "female" if "female" in clean_array[0] else "male"
         weight = clean_array[3]
         originating_zoo = clean_array[4] + ', ' + clean_array[5]
         date_arrival = datetime.date.today()
@@ -64,10 +58,7 @@ for line in lines:
         animal_id = animal.gen_unique_id(species, str(id_number))
         birthdate = animal.gen_birth_date(clean_array[0], clean_array[1])
         color = clean_array[2]
-        if "female" in clean_array[0]:
-            sex = "female"
-        else:
-            sex = "male"
+        sex = "female" if "female" in clean_array[0] else "male"
         weight = clean_array[3]
         originating_zoo = clean_array[4] + ', ' + clean_array[5]
         date_arrival = datetime.date.today()
@@ -80,24 +71,14 @@ for line in lines:
         animal_id = animal.gen_unique_id(species, str(id_number))
         birthdate = animal.gen_birth_date(clean_array[0], clean_array[1])
         color = clean_array[2]
-        if "female" in clean_array[0]:
-            sex = "female"
-        else:
-            sex = "male"
+        sex = "female" if "female" in clean_array[0] else "male"
         weight = clean_array[3]
         originating_zoo = clean_array[4] + ', ' + clean_array[5]
         date_arrival = datetime.date.today()
         hyena = Hyena(species, name, animal_id, birthdate, color, sex, weight, originating_zoo, date_arrival)
         hyena_list.append(hyena.create_hyena_item())
-
-# CREATE FILE
-print(lion_list)
-print(tiger_list)
-print(bear_list)
-print(hyena_list)
-
-# write data to file
 # The 'with' statement handles file closing automatically
+# CREATE FILE
 with open('zooPopulation.txt', 'w') as file:
     file.write("******* Zoo Population and Habitat Assignment Report *******\n")
     file.write("\n")
